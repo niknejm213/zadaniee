@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Przykład nr 4</title>
+	<script language="JavaScript">
+		function WinOpen_wesolowski()
+			{
+			window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=500,width=800,top=200,left=200");
+			}
+		function WinOpen_wesolowski_2()
+			{
+			window.open("okno.html","okienko","toolbar=no,directories=no,menubar=no,height=100,width=800,top=500,left=50");
+			}
+	</script>
+</head>
+<body>
+
+<p align="right" style="font-size:50px;">Wesołowski</p>
+
+	<form>
+		<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_wesolowski(' ')">
+		<input type="button" name="przycisk" value="nacisnij mnie" onclick="WinOpen_wesolowski_2(' ')">
+	</form>
+</body>
+</html>
