@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>14</title>
+	</head>
+	<body>
+
+	<div style="color:red;font-size:50px;">
+		<script language="JavaScript">
+			var b_wes=prompt("b=","");
+			var c_wes=prompt("c=","");
+			var suma;
+			var a_wes;
+			var cosalfa;
+			var sinalfa;
+			var tgalfa;
+			var ctgalfa;
+			var c=parseFloat(c_wes);
+			var b=parseFloat(b_wes);
+			var a=parseFloat(a_wes);
+			a=Math.sqrt((Math.pow(c,2))-(Math.pow(b,2)));
+			
+			cosalfa=b/c;
+			sinalfa=a/c;
+			tgalfa=a/b;
+			ctgalfa=b/a;
+			
+			document.write("cos(alfa)="+b+" / "+c+" = "+cosalfa.toFixed(2)+"<br>");
+			document.write("cos(alfa)="+a+" / "+c+" = "+sinalfa.toFixed(2)+"<br>");
+			document.write("cos(alfa)="+a+" / "+b+" = "+tgalfa.toFixed(2)+"<br>");
+			document.write("cos(alfa)="+b+" / "+a+" = "+ctgalfa.toFixed(2)+"<br>");
+		</script>
+	</div>
+
+	</body>
+</html>
