@@ -1,0 +1,43 @@
+<html>
+	<body>
+		<div style="color:red;font-size:50px;">
+			<script language="JavaScript">
+				var c_wes=parseFloat(prompt("podaj c=",""));
+				var b_wes=parseFloat(prompt("podaj b=",""));
+				var sinalfa;
+				var cosalfa;
+				var tgalfa;
+				var ctgalfa;
+				var a_wes;
+				var pole_wes;
+				var h3_wes;
+				var alfa_wes;
+				var beta_wes;
+				
+				a_wes=Math.sqrt((Math.pow(c_wes,2))-(Math.pow(b_wes,2)));
+				pole_wes=(a_wes*b_wes)/2;
+				sinalfa=a_wes/c_wes;
+				cosalfa=b_wes/c_wes;
+				tgalfa=a_wes/b_wes;
+				ctgalfa=b_wes/a_wes;
+				h3_wes=(a_wes*b_wes)/c_wes;
+				alfa_wes=Math.sin(a_wes/c_wes)*180/Math.PI;
+				beta_wes=90-alfa_wes;
+				
+				
+				document.write("trzeci bok="+a_wes.toFixed(3)+"cm <br>");
+				document.write("h1="+a_wes.toFixed(3)+"cm <br>");
+				document.write("h2="+b_wes.toFixed(3)+"cm <br>");
+				document.write("h3="+h3_wes.toFixed(3)+"cm <br>");
+				document.write("pole="+pole_wes.toFixed(3)+"cm^2 <br>");
+				document.write("alfa="+alfa_wes.toFixed(3)+"<sup>o</sup><br>");
+				document.write("beta="+beta_wes.toFixed(3)+"<sup>o</sup><br>");
+				
+				document.write("sin(alfa)="+a_wes+" / "+c_wes+" = "+sinalfa.toFixed(3)+"<br>");
+				document.write("cos(alfa)="+b_wes+" / "+c_wes+" = "+cosalfa.toFixed(3)+"<br>");
+				document.write("tg(alfa)="+a_wes+" / "+b_wes+" = "+tgalfa.toFixed(3)+"<br>");
+				document.write("ctg(alfa)="+b_wes+" / "+a_wes+" = "+ctgalfa.toFixed(3)+"<br>");
+			</script>
+		</div>
+	</body>
+</html>
