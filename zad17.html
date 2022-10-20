@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+	<title> Użycie fukcji </title>
+	<meta charset="utf-8">
+	</head>
+<body>
+	<div style="color:navy;font-size:50px;">
+		<script language="JavaScript">
+			var a=parseFloat(prompt("a=",""));
+			var b=parseFloat(prompt("b=",""));
+			
+			
+			function suma_wes(a, b) {
+			return a+b;
+			}
+			
+			function odejmowanie_wes(a, b) {
+			return a-b;
+			}
+			
+			function mnozenie_wes(a, b) {
+			return a*b;
+			}
+			
+			function od_kwadratu_wes(a, b) {
+			 return Math.pow(a,2), Math.pow(b,2);
+			
+			}
+			
+			function reszta_z_dzielenia_a_przez_b_wes(a, b) {
+			return a%b;
+			}
+			
+			document.write("suma="+suma_wes(a,b)+"<br>");
+			document.write("odejmowanie="+odejmowanie_wes(a,b)+"<br>");
+			document.write("mnozenie="+mnozenie_wes(a,b)+"<br>");
+			document.write("od kwadrau="+od_kwadratu_wes(a,b)+"<br>");
+			document.write("reszta z dzielenia a/b="+ reszta_z_dzielenia_a_przez_b_wes(a,b)+"<br>");
+		</script>
+	</div>
+</body>
+</html>

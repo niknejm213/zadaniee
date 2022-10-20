@@ -1,0 +1,51 @@
+<textarea style="width: 590px; height: 237px;">
+<html>
+<head>
+	<title>
+	obwod i pole
+	</title>
+<script language="JavaScript">
+	function V(r,h)
+	{
+	r_liczba=parseFloat(r)
+	h_liczba=parseFloat(h)
+	V_wynik=r_liczba*h_liczba
+	document.getElementsByName('obj')[0].value=V_wynik.toFixed(2); /* na dokument */
+	alert("pole="+V_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+	pokaz1.innerHTML="pole="+V_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+	}
+	function Pc(r,h)
+	{
+	r_liczba=parseFloat(r)
+	h_liczba=parseFloat(h)
+	19
+	Pc_wynik=2*(r_liczba+h_liczba)
+	document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
+	alert("obwod="+Pc_wynik.toFixed(2)+" cm");
+	pokaz2.innerHTML="obwod="+Pc_wynik.toFixed(2)+"cm";
+	}
+</script>
+</head>
+<body>
+	obwod i pole
+	<br> <br>
+		<form name="formularz" action="..." onsubmit="V(this.promien.value,this.wysokosc.value); Pc(this.promien.value,this.wysokosc.value);return false">
+		Podaj a=
+		<input size="6" name="promien">
+		Podaj b=
+		<input size="6" name="wysokosc">
+		<br> <br>
+		<input TYPE="submit" Value="oblicz" >
+		<br> <br>
+		pole=
+		<input size="6" name="obj">
+		obwod=
+		<input size="6" name="pole">
+		</form>
+	<table>
+	<tr id="pokaz1"></tr>
+	<tr id="pokaz2"></tr>
+	</table>
+</body>
+</html>
+</textarea>
