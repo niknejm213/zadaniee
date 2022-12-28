@@ -1,0 +1,55 @@
+<html>
+<body>
+<div style="color:red;font-size:40px;">
+<script language="JavaScript">
+
+ var imiedl=prompt("wczytaj imie=","");
+ var nazwiskodl=prompt("wczytaj nazwisko=","");
+ var imiedl;
+ var nazwiskodl;
+  var a_wes=parseFloat(a_wes);
+  var b_wes=parseFloat(b_wes);
+ a_wes=((nazwiskodl.length%6)+20)-2;
+ b_wes=(imiedl.length%4)+5;
+ 
+ 
+ for(i=1;i<=b_wes;i++)
+ {
+ document.write("*");
+ }
+ 
+ 
+ 
+ 
+ 
+  for(i=1;i<=a_wes;i++)
+ {
+   document.write("<br>")
+   document.write("*");
+   
+   for(a=1;a<=(b_wes-2);a++)
+ {
+   document.write("&nbsp&nbsp");
+   
+   }
+ 
+  document.write("*");
+  document.write("<br>") 
+ }
+
+
+     
+   
+   
+   
+  for(i=1;i<=b_wes;i++)
+ {
+ document.write("*");
+ }
+
+ 
+ 
+ </script>
+</div>
+</body>
+</html>

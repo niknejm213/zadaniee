@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> kwadrat </title>
+<script language="JavaScript">
+
+	var x=prompt("podaj liczbę R=","");
+	var R_wes=parseFloat(x);
+	var a=0;
+	
+	for ( var i=-R_wes; i<=R_wes; i++){
+		for ( var k=-R_wes; k<=R_wes; k++){
+		document.write("("+i+","+k+") ");
+		a++
+		}
+		document.write("<br>");
+	}
+	document.write("<br> licznik: "+a);
+</script>
+</head>
+<body>
+</body>
+</html>

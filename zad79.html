@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> kolo</title>
+
+<style>
+
+
+
+</style>
+<script language="JavaScript">
+
+	var x=prompt("podaj liczbę R=","");
+	var R_wes=parseFloat(x);
+	var a_wes=0;
+	var d_wes;
+	
+	for ( var i=-R_wes-1; i<=R_wes+1; i++){
+		for ( var k=-Math.round(R_wes)-1; k<=Math.round(R_wes)+1; k++){
+		
+			d_wes=Math.sqrt(i*i+k*k)
+			
+			if(d_wes<=R_wes){
+					a_wes++;
+			}
+		}
+	}
+	document.write("<br> licznik: "+a_wes);
+</script>
+</head>
+<body>
+
+<table border="1">
+<tr>
+	<td>Promień koła R</td>
+	<td>Liczba punktów kratowych N(R)</td>
+</tr>
+
+<tr>
+	<td>2,01</td>
+	<td>13</td>
+</tr>
+
+<tr>
+	<td>4,50</td>
+	<td>62</td>
+</tr>
+
+<tr>
+	<td>100+numer_w_dzieniku</td>
+	<td>53885</td>
+</tr>
+
+<tr>
+	<td>1000+numer_w_dzienniku</td>
+	<td>3339345</td>
+</tr>
+
+</body>
+</html>

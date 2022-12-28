@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="50" rows="50">
+<html>
+<body>
+<div style="color:red;font-size:40px;">
+ <script language="JavaScript">
+
+ var p_wes=prompt("podaj pierwsza liczbe z przedzialu <20,60>","");
+ var d_wes=prompt("podaj druga liczbe z przedzialu <20,60>","");
+
+ var pocz_wes;
+ var tekst_wes="wesolowski lukasz";
+ var zwiek_wes;
+ var i;
+ 
+  var a_wes=parseFloat(p_wes);
+  var b_wes=parseFloat(d_wes);
+
+  if(p_wes>60 || d_wes>60 || p_wes<20 || d_wes<20)
+  document.write("zle wartosci");
+ 
+  
+  if(p_wes<d_wes) {
+  for(i=p_wes;i<d_wes;i++){
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_wes+"<br></p>")
+}
+}
+  if(d_wes<p_wes) {
+  for(i=p_wes;i>d_wes;i--){
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_wes+"<br></p>")
+}
+}
+ </script>
+</div>
+</body>
+</html>
+</textarea>
+</body>
+</html>
